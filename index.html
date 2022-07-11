@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Default Highlight.js css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css"
+    />
+    <!-- Custom Highlight.js theme Dracula -->
+    <link rel="stylesheet" href="./highlightjs/dracula.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Code Showcase with copy button functionality</title>
+  </head>
+  <body>
+    <h1 class="center_text header_text"> Coding Problems</h1>
+    <div class="container-parent">
+        <div class="container">
+            <div class="container-child">
+                <h2 class="language problem-name" id="problem-1">Palindrome Number</h2>
+                <p class="language" id="problem-statement-1" style="display: none">
+                    
+                    Given an integer x, return true if x is palindrome integer.
+
+                    An integer is a palindrome when it reads the same backward as forward.
+                    
+                    For example, 121 is a palindrome while 123 is not. <br><br>
+                    Input : x = 121 <br>
+                    Output : true <br>
+                    Explanation: 121 reads as 121 from left to right and from right to left.
+                </p>
+                <div class="code-wrapper" id="code-wrapper-1" style="display: none">
+                    <pre>
+                            <code id="code">
+            class Solution {
+                public:
+                    bool isPalindrome(int x) {
+                        if(x <0 || (x != 0 && x % 10 == 0)) return false;
+                        int sum = 0;
+                        while(x > sum) {
+                            sum = sum * 10 + x % 10;
+                            x = x/10;
+                        }
+                        return (x == sum) || (x == sum / 10);
+                    }
+            };
+            </code>
+                        </pre>
+                  </div>
+            </div>
+            <div class="container-child">
+                <p class="language" id="language-copy">Problem 1</p>
+          <div class="code-wrapper">
+            <pre>
+                    <code id="code">
+    class Solution {
+        public:
+            bool isPalindrome(int x) {
+                if(x <0 || (x != 0 && x % 10 == 0)) return false;
+                int sum = 0;
+                while(x > sum) {
+                    sum = sum * 10 + x % 10;
+                    x = x/10;
+                }
+                return (x == sum) || (x == sum / 10);
+            }
+    };
+    </code>
+                </pre>
+          </div>
+            </div>
+            <div class="container-child">
+                <p class="language" id="language-copy">Problem 1</p>
+                <div class="code-wrapper">
+                    <pre>
+                            <code id="code">
+            class Solution {
+                public:
+                    bool isPalindrome(int x) {
+                        if(x <0 || (x != 0 && x % 10 == 0)) return false;
+                        int sum = 0;
+                        while(x > sum) {
+                            sum = sum * 10 + x % 10;
+                            x = x/10;
+                        }
+                        return (x == sum) || (x == sum / 10);
+                    }
+            };
+            </code>
+                        </pre>
+                  </div>
+            </div>
+            <div class="container-child">
+                <p class="language" id="language-copy">Problem 1</p>
+          <div class="code-wrapper">
+            <pre>
+                    <code id="code">
+    class Solution {
+        public:
+            bool isPalindrome(int x) {
+                if(x <0 || (x != 0 && x % 10 == 0)) return false;
+                int sum = 0;
+                while(x > sum) {
+                    sum = sum * 10 + x % 10;
+                    x = x/10;
+                }
+                return (x == sum) || (x == sum / 10);
+            }
+    };
+    </code>
+                </pre>
+          </div>
+            </div>
+            <div class="container-child">
+                <p class="language" id="language-copy">Problem 1</p>
+                <div class="code-wrapper">
+                    <pre>
+                            <code id="code">
+            class Solution {
+                public:
+                    bool isPalindrome(int x) {
+                        if(x <0 || (x != 0 && x % 10 == 0)) return false;
+                        int sum = 0;
+                        while(x > sum) {
+                            sum = sum * 10 + x % 10;
+                            x = x/10;
+                        }
+                        return (x == sum) || (x == sum / 10);
+                    }
+            };
+            </code>
+                        </pre>
+                  </div>
+            </div>
+            <div class="container-child">
+                <p class="language" id="language-copy">Problem 1</p>
+          <div class="code-wrapper">
+            <pre>
+                    <code id="code">
+    class Solution {
+        public:
+            bool isPalindrome(int x) {
+                if(x <0 || (x != 0 && x % 10 == 0)) return false;
+                int sum = 0;
+                while(x > sum) {
+                    sum = sum * 10 + x % 10;
+                    x = x/10;
+                }
+                return (x == sum) || (x == sum / 10);
+            }
+    };
+    </code>
+                </pre>
+          </div>
+            </div>
+            <div class="container-child">
+                <p class="language" id="language-copy">Problem 1</p>
+                <div class="code-wrapper">
+                    <pre>
+                            <code id="code">
+            class Solution {
+                public:
+                    bool isPalindrome(int x) {
+                        if(x <0 || (x != 0 && x % 10 == 0)) return false;
+                        int sum = 0;
+                        while(x > sum) {
+                            sum = sum * 10 + x % 10;
+                            x = x/10;
+                        }
+                        return (x == sum) || (x == sum / 10);
+                    }
+            };
+            </code>
+                        </pre>
+                  </div>
+            </div>
+            <div class="container-child">
+                <p class="language" id="language-copy">Problem 1</p>
+          <div class="code-wrapper">
+            <pre>
+                    <code id="code">
+    class Solution {
+        public:
+            bool isPalindrome(int x) {
+                if(x <0 || (x != 0 && x % 10 == 0)) return false;
+                int sum = 0;
+                while(x > sum) {
+                    sum = sum * 10 + x % 10;
+                    x = x/10;
+                }
+                return (x == sum) || (x == sum / 10);
+            }
+    };
+    </code>
+                </pre>
+          </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("problem-1").addEventListener("click", function() {
+            let codeWrapper = document.getElementById("code-wrapper-1")
+            if(codeWrapper.style.display == "none") {
+                document.getElementById("code-wrapper-1").style.display = "block";
+                document.getElementById("code-wrapper-1").style.textAlign = "left";
+                document.getElementById("problem-statement-1").style.display = "block";
+                document.getElementById("problem-statement-1").style.textAlign = "left";
+            } else {
+                document.getElementById("code-wrapper-1").style.display = "none";
+                document.getElementById("problem-statement-1").style.display = "none";
+            }
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  </body>
+</html>
