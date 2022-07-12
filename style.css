@@ -73,7 +73,7 @@
     color: black;
   }
 
-  .problem-name {
+  .problem-name, .solution-name {
     text-align: left;
     cursor: pointer;
     background-color: rgb(97, 96, 96);
@@ -84,3 +84,25 @@
     background-color: white;
     color: rgb(97, 96, 96);
   }
+
+  #solution-1 {
+    background-color: rgb(97, 96, 96);
+    color: white;
+  }
+
+  #solution-1:hover {
+    background-color: white;
+    color: rgb(97, 96, 96);
+  }
+
+  .fa {
+    float: right;
+  }
+
+  .disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
