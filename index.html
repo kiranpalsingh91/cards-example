@@ -10,6 +10,8 @@
     />
     <!-- Custom Highlight.js theme Dracula -->
     <link rel="stylesheet" href="./highlightjs/dracula.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
@@ -21,7 +23,7 @@
     <div class="container-parent">
         <div class="container">
             <div class="container-child">
-                <h2 class="language problem-name" id="problem-1">Palindrome Number</h2>
+                <h2 class="language problem-name disable-select" id="problem-1">Palindrome Number <i class="fa fa-arrow-down custom-dropdown-problem-1"></i></h2>
                 <p class="language" id="problem-statement-1" style="display: none">
                     
                     Given an integer x, return true if x is palindrome integer.
@@ -33,27 +35,27 @@
                     Output : true <br>
                     Explanation: 121 reads as 121 from left to right and from right to left.
                 </p>
+                <h2 class="language solution-name disable-select" id="solution-1" style="display: none">Solution  <i class="fa fa-arrow-down custom-dropdown-solution-1"></i></h2>
                 <div class="code-wrapper" id="code-wrapper-1" style="display: none">
                     <pre>
-                            <code id="code">
-            class Solution {
-                public:
-                    bool isPalindrome(int x) {
-                        if(x <0 || (x != 0 && x % 10 == 0)) return false;
-                        int sum = 0;
-                        while(x > sum) {
-                            sum = sum * 10 + x % 10;
-                            x = x/10;
-                        }
-                        return (x == sum) || (x == sum / 10);
-                    }
-            };
-            </code>
-                        </pre>
-                  </div>
+                        <code id="code">
+class Solution {
+    public:
+        bool isPalindrome(int x) {
+            if(x <0 || (x != 0 && x % 10 == 0)) return false;
+            int sum = 0;
+            while(x > sum) {
+                sum = sum * 10 + x % 10;
+                x = x/10;
+            }
+            return (x == sum) || (x == sum / 10);
+        }
+};
+                        </code>
+                    </pre>
+                </div>
             </div>
             <div class="container-child">
-                <p class="language" id="language-copy">Problem 1</p>
           <div class="code-wrapper">
             <pre>
                     <code id="code">
@@ -74,7 +76,6 @@
           </div>
             </div>
             <div class="container-child">
-                <p class="language" id="language-copy">Problem 1</p>
                 <div class="code-wrapper">
                     <pre>
                             <code id="code">
@@ -93,125 +94,37 @@
             </code>
                         </pre>
                   </div>
-            </div>
-            <div class="container-child">
-                <p class="language" id="language-copy">Problem 1</p>
-          <div class="code-wrapper">
-            <pre>
-                    <code id="code">
-    class Solution {
-        public:
-            bool isPalindrome(int x) {
-                if(x <0 || (x != 0 && x % 10 == 0)) return false;
-                int sum = 0;
-                while(x > sum) {
-                    sum = sum * 10 + x % 10;
-                    x = x/10;
-                }
-                return (x == sum) || (x == sum / 10);
-            }
-    };
-    </code>
-                </pre>
-          </div>
-            </div>
-            <div class="container-child">
-                <p class="language" id="language-copy">Problem 1</p>
-                <div class="code-wrapper">
-                    <pre>
-                            <code id="code">
-            class Solution {
-                public:
-                    bool isPalindrome(int x) {
-                        if(x <0 || (x != 0 && x % 10 == 0)) return false;
-                        int sum = 0;
-                        while(x > sum) {
-                            sum = sum * 10 + x % 10;
-                            x = x/10;
-                        }
-                        return (x == sum) || (x == sum / 10);
-                    }
-            };
-            </code>
-                        </pre>
-                  </div>
-            </div>
-            <div class="container-child">
-                <p class="language" id="language-copy">Problem 1</p>
-          <div class="code-wrapper">
-            <pre>
-                    <code id="code">
-    class Solution {
-        public:
-            bool isPalindrome(int x) {
-                if(x <0 || (x != 0 && x % 10 == 0)) return false;
-                int sum = 0;
-                while(x > sum) {
-                    sum = sum * 10 + x % 10;
-                    x = x/10;
-                }
-                return (x == sum) || (x == sum / 10);
-            }
-    };
-    </code>
-                </pre>
-          </div>
-            </div>
-            <div class="container-child">
-                <p class="language" id="language-copy">Problem 1</p>
-                <div class="code-wrapper">
-                    <pre>
-                            <code id="code">
-            class Solution {
-                public:
-                    bool isPalindrome(int x) {
-                        if(x <0 || (x != 0 && x % 10 == 0)) return false;
-                        int sum = 0;
-                        while(x > sum) {
-                            sum = sum * 10 + x % 10;
-                            x = x/10;
-                        }
-                        return (x == sum) || (x == sum / 10);
-                    }
-            };
-            </code>
-                        </pre>
-                  </div>
-            </div>
-            <div class="container-child">
-                <p class="language" id="language-copy">Problem 1</p>
-          <div class="code-wrapper">
-            <pre>
-                    <code id="code">
-    class Solution {
-        public:
-            bool isPalindrome(int x) {
-                if(x <0 || (x != 0 && x % 10 == 0)) return false;
-                int sum = 0;
-                while(x > sum) {
-                    sum = sum * 10 + x % 10;
-                    x = x/10;
-                }
-                return (x == sum) || (x == sum / 10);
-            }
-    };
-    </code>
-                </pre>
-          </div>
             </div>
         </div>
     </div>
     <script>
         document.getElementById("problem-1").addEventListener("click", function() {
             let codeWrapper = document.getElementById("code-wrapper-1")
-            if(codeWrapper.style.display == "none") {
-                document.getElementById("code-wrapper-1").style.display = "block";
-                document.getElementById("code-wrapper-1").style.textAlign = "left";
+            let problemStatement = document.getElementById("problem-statement-1")
+            if(problemStatement.style.display == "none") {
                 document.getElementById("problem-statement-1").style.display = "block";
                 document.getElementById("problem-statement-1").style.textAlign = "left";
+                document.getElementById("solution-1").style.display = "block";
+                document.getElementById("solution-1").style.textAlign = "left";
+                $(".custom-dropdown-problem-1").removeClass("fa-arrow-down").addClass("fa-arrow-up");
             } else {
                 document.getElementById("code-wrapper-1").style.display = "none";
                 document.getElementById("problem-statement-1").style.display = "none";
+                document.getElementById("solution-1").style.display = "none";
+                $(".custom-dropdown-problem-1").removeClass("fa-arrow-up").addClass("fa-arrow-down");
+                $(".custom-dropdown-solution-1").removeClass("fa-arrow-up").addClass("fa-arrow-down");
+            }
+        })
+
+        document.getElementById("solution-1").addEventListener("click", function() {
+            let codeWrapper = document.getElementById("code-wrapper-1")
+            if(codeWrapper.style.display == "none") {
+                document.getElementById("code-wrapper-1").style.display = "block";
+                document.getElementById("code-wrapper-1").style.textAlign = "left";
+                $(".custom-dropdown-solution-1").removeClass("fa-arrow-down").addClass("fa-arrow-up");
+            } else {
+                document.getElementById("code-wrapper-1").style.display = "none";
+                $(".custom-dropdown-solution-1").removeClass("fa-arrow-up").addClass("fa-arrow-down");
             }
         })
     </script>

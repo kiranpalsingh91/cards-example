@@ -37,8 +37,3 @@ document.addEventListener('DOMContentLoaded', () => {
   
     copyButton.addEventListener('click', copyTextHandler);
 });
-
-document.getElementById("problem-1").onclick(function() {
-    document.getElementById("code-wrapper-1").style.display = "block";
-    document.getElementById("problem-statement-1").style.display = "block";
-})
